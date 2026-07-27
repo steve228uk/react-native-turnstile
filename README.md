@@ -19,21 +19,21 @@ A typed Cloudflare Turnstile component for React Native and Expo, powered by
 Install the package and its WebView peer dependency:
 
 ```sh
-bun add @steve228uk/react-native-turnstile react-native-webview
+npm install @steve228uk/react-native-turnstile react-native-webview
 ```
 
 With Expo, let Expo select the compatible WebView version:
 
 ```sh
-bun add @steve228uk/react-native-turnstile
-bunx expo install react-native-webview
+npm install @steve228uk/react-native-turnstile
+npx expo install react-native-webview
 ```
 
 For a bare React Native iOS application, install pods after adding the
 dependency:
 
 ```sh
-bunx pod-install
+npx pod-install
 ```
 
 The package requires React 18 or later, React Native 0.76 or later, and
