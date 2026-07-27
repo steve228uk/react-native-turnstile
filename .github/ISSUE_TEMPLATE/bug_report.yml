@@ -1,0 +1,70 @@
+name: Bug report
+description: Report reproducible incorrect behavior
+title: '[Bug]: '
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please do not include secret keys, live tokens, or other credentials.
+  - type: checkboxes
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
+  - type: input
+    attributes:
+      label: Package version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - iOS
+        - Android
+        - Other
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: React Native and react-native-webview versions
+      placeholder: React Native 0.x, react-native-webview 13.x
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Widget mode
+      options:
+        - Managed
+        - Invisible
+        - Non-interactive
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Minimal reproduction
+      description: Link a small repository or provide the smallest code sample that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Logs
+      description: Remove credentials, secret keys, and Turnstile tokens before pasting logs.
+      render: shell
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Include device, OS version, widget mode, network conditions, or screenshots if relevant.

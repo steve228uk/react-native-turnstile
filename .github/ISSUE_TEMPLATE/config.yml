@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/steve228uk/react-native-turnstile/security/advisories/new
+    about: Report vulnerabilities privately instead of opening a public issue.
+  - name: Cloudflare Turnstile documentation
+    url: https://developers.cloudflare.com/turnstile/
+    about: Check Cloudflare's documentation for service and dashboard questions.

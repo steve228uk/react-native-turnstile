@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest a focused improvement
+title: '[Feature]: '
+labels:
+  - enhancement
+body:
+  - type: checkboxes
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find this request.
+          required: true
+  - type: textarea
+    attributes:
+      label: Problem
+      description: What problem would this solve for React Native applications?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed API or behavior
+      description: Show the smallest API you think would solve the problem.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Alternatives considered
+      description: Describe workarounds or other designs you considered.
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Include relevant Cloudflare or react-native-webview documentation.
